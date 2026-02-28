@@ -27,7 +27,7 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">JX</a>
+            <a href="#" class="nav-logo" style="visibility: hidden;">JX</a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -37,7 +37,6 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
@@ -47,24 +46,40 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero" id="hero">
-        <div class="hero-bg" style="background-image: url('./static/image/Group.png');"></div>
+    <!-- Hero + About (merged) -->
+    <header class="hero hero-merged" id="about">
+        <div class="hero-bg" style="background-image: url('./static/image/meili.jpg');"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-            <div class="hero-avatar">
-                <img src="./static/image/peason.png" alt="Johnny Xue" width="120" height="120">
-            </div>
-            <h1 class="hero-name">Johnny Xue</h1>
-            <p class="hero-title">Software Development Engineer at Amazon</p>
-            <p class="hero-subtitle">Arlington, VA</p>
-            <div class="hero-tags">
-                <span class="hero-tag">Java</span>
-                <span class="hero-tag">Python</span>
-                <span class="hero-tag">TypeScript</span>
-                <span class="hero-tag">AWS</span>
-                <span class="hero-tag">React</span>
-                <span class="hero-tag">Spring Boot</span>
+            <h1 class="hero-name" style="margin-bottom: var(--space-2xl);">Johnny Xue</h1>
+            <div class="hero-about">
+                <div class="hero-about-text">
+                    <p>Software Development Engineer with expertise in full-stack development, distributed systems, and cloud-native architecture. I build scalable, reliable software solutions with a focus on clean design, operational excellence, and measurable impact.</p>
+                    <p>With graduate training in both Computer Science and Statistics, I bring a blend of strong engineering fundamentals and quantitative reasoning to every project &#8212; from designing high-throughput microservices to developing data-driven applications.</p>
+                </div>
+                <div class="hero-edu-col">
+                    <div class="hero-edu-item">
+                        <img src="./static/image/upenn_shield.png" alt="University of Pennsylvania">
+                        <div class="hero-edu-text">
+                            <strong>University of Pennsylvania</strong>
+                            <span>Master of Computer and Information Technology</span>
+                        </div>
+                    </div>
+                    <div class="hero-edu-item">
+                        <img src="./static/image/UVA-Symbol.png" alt="University of Virginia">
+                        <div class="hero-edu-text">
+                            <strong>University of Virginia</strong>
+                            <span>Master of Science in Statistics</span>
+                        </div>
+                    </div>
+                    <div class="hero-edu-item">
+                        <img src="./static/image/purdue-logo.png" alt="Purdue University">
+                        <div class="hero-edu-text">
+                            <strong>Purdue University</strong>
+                            <span>Bachelor of Science in Economics</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="hero-cta">
                 <a href="#experience" class="btn btn-primary">View Experience</a>
@@ -78,98 +93,6 @@
 
     <!-- Main Content -->
     <main>
-        <!-- About Section -->
-        <section class="section" id="about">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">About Me</h2>
-                <div class="about-grid">
-                    <div class="about-text" data-aos="fade-right" data-aos-delay="100">
-                        <p>I'm a Software Development Engineer at Amazon, building high-scale payment microservices that handle over 1,200 TPS with 99.8% uptime. I bring a unique blend of software engineering expertise and data analytics background.</p>
-                        <p>With a Master's in Computer and Information Technology from UPenn and a Master's in Statistics from UVA, I combine strong engineering fundamentals with data-driven decision making. My experience spans full-stack development, cloud infrastructure, and machine learning.</p>
-                        <div class="about-stats">
-                            <div class="stat">
-                                <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
-                                <span class="stat-label">Years Experience</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number" data-count="1200">0</span><span class="stat-plus">+</span>
-                                <span class="stat-label">TPS Handled</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number" data-count="3">0</span>
-                                <span class="stat-label">Degrees</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-details" data-aos="fade-left" data-aos-delay="200">
-                        <div class="detail-card">
-                            <div class="detail-icon">💼</div>
-                            <div class="detail-info">
-                                <span class="detail-label">Current Role</span>
-                                <span class="detail-value">SDE at Amazon</span>
-                            </div>
-                        </div>
-                        <div class="detail-card">
-                            <div class="detail-icon">📍</div>
-                            <div class="detail-info">
-                                <span class="detail-label">Location</span>
-                                <span class="detail-value">Arlington, VA</span>
-                            </div>
-                        </div>
-                        <div class="detail-card">
-                            <div class="detail-icon">🎓</div>
-                            <div class="detail-info">
-                                <span class="detail-label">Education</span>
-                                <span class="detail-value">UPenn MCIT · UVA MS Stats</span>
-                            </div>
-                        </div>
-                        <div class="detail-card">
-                            <div class="detail-icon">📧</div>
-                            <div class="detail-info">
-                                <span class="detail-label">Email</span>
-                                <span class="detail-value">carlosxue68@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Skills -->
-        <section class="section section-alt" id="skills-banner">
-            <div class="container">
-                <div class="skills-banner" data-aos="fade-up">
-                    <h3 class="skills-banner-title">Technical Skills</h3>
-                    <div class="skills-tags">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">R</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">Unit Testing</span>
-                        <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Tableau</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Data Mining</span>
-                        <span class="skill-tag">A/B Testing</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">AWS CDK</span>
-                        <span class="skill-tag">AWS Lambda</span>
-                        <span class="skill-tag">CloudWatch</span>
-                        <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">Snowflake</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Experience Section -->
         <section class="section" id="experience">
             <div class="container">
@@ -183,10 +106,11 @@
                                 <span class="timeline-company">Amazon</span>
                             </div>
                             <div class="timeline-meta">
-                                <span class="timeline-date">Jun 2025 – Present</span>
-                                <span class="timeline-location">Arlington, VA</span>
+                                <span class="timeline-date">Jun 2025 &#8211; Present</span>
+                                <span class="timeline-location">Seattle, WA</span>
                             </div>
                             <ul>
+
                                 <li>Engineered microservices for payment widget on order details page and Wallet page using <strong>AWS Lambda</strong>, handling over 1,200 TPS while achieving 99.8% service uptime and maintaining sub-300ms latency</li>
                                 <li>Developed and maintained a dedicated <strong>Node.js Backend-for-Frontend (BFF)</strong> package to aggregate and transform data from diverse downstream payment microservices, resulting in a 33% improvement in page load time</li>
                                 <li>Accelerated deployment by implementing full infrastructure-as-code using <strong>AWS CDK</strong>, automating environment configuration and reducing deployment time from hours to under 15 minutes</li>
@@ -204,7 +128,7 @@
                                 <span class="timeline-company">Sentara Health</span>
                             </div>
                             <div class="timeline-meta">
-                                <span class="timeline-date">Jul 2021 – May 2025</span>
+                                <span class="timeline-date">Jul 2021 &#8211; May 2025</span>
                                 <span class="timeline-location">Richmond, VA</span>
                             </div>
                             <ul>
@@ -221,7 +145,7 @@
                                 <span class="timeline-company">Wilson Consulting Group</span>
                             </div>
                             <div class="timeline-meta">
-                                <span class="timeline-date">May 2020 – Jul 2021</span>
+                                <span class="timeline-date">May 2020 &#8211; Jul 2021</span>
                                 <span class="timeline-location">Washington, DC</span>
                             </div>
                             <ul>
@@ -240,25 +164,6 @@
                 <div class="projects-grid">
                     <article class="project-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="project-image">
-                            <img src="./static/image/LOGO1.png" alt="Online Gaming Platform" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="#" class="btn btn-small">View Details</a>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Online Gaming Platform</h3>
-                            <p class="project-desc">Full-stack gaming platform with user management, payment systems, leaderboards, and social interactions. Implemented dynamic game resource loading, persistent user data storage, and efficient concurrency handling.</p>
-                            <div class="project-tags">
-                                <span class="tag">Java</span>
-                                <span class="tag">Spring Boot</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">Redis</span>
-                                <span class="tag">JWT</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="project-image">
                             <img src="./static/image/ArtiEcho_logo.png" alt="ArtiEcho" loading="lazy">
                             <div class="project-overlay">
                                 <a href="https://github.com/ChaoyangS/ArtiEcho" target="_blank" rel="noopener noreferrer" class="btn btn-small">View on GitHub</a>
@@ -266,7 +171,7 @@
                         </div>
                         <div class="project-info">
                             <h3 class="project-title">ArtiEcho</h3>
-                            <p class="project-desc">Full-stack web app that lets users explore global art through a 3D interactive globe and ambient sounds. Discover artworks by cultural origins, artists, and genres with real-time data visualization. Hosted on AWS EC2 & RDS.</p>
+                            <p class="project-desc">Full-stack web app that lets users explore global art through a 3D interactive globe and ambient sounds. Discover artworks by cultural origins, artists, and genres with real-time data visualization. Hosted on AWS EC2 &amp; RDS.</p>
                             <div class="project-tags">
                                 <span class="tag">React</span>
                                 <span class="tag">Three.js</span>
@@ -277,53 +182,27 @@
                             </div>
                         </div>
                     </article>
-                    <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="project-image">
-                            <img src="./static/image/LOGO3.png" alt="Reinsurance ML Prediction" loading="lazy">
+                            <img src="./static/image/online_shopping.avif" alt="Online Shop" loading="lazy">
                             <div class="project-overlay">
-                                <a href="#" class="btn btn-small">View Details</a>
+                                <a href="https://github.com/johnnynaught/online-shop" target="_blank" rel="noopener noreferrer" class="btn btn-small">View on GitHub</a>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">Reinsurance ML Prediction</h3>
-                            <p class="project-desc">Machine learning pipeline to identify high-cost patients for risk assessment and premium setting. Supports 2,100+ plan beneficiaries and $18M in resource allocation decisions.</p>
+                            <h3 class="project-title">Online Shop</h3>
+                            <p class="project-desc">Full-stack e-commerce application with an Angular SPA frontend and a Spring Boot REST API backend. Features product catalog browsing, real-time shopping cart management, order submission, and order history with expandable item details. Built with a layered architecture using the DTO pattern, JPA/Hibernate ORM, and responsive UI with Bootstrap.</p>
                             <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Machine Learning</span>
-                                <span class="tag">Data Mining</span>
+                                <span class="tag">Angular</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">JPA/Hibernate</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">REST API</span>
                             </div>
                         </div>
                     </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="section" id="education">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Education</h2>
-                <div class="education-grid">
-                    <div class="education-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="education-icon">🏛️</div>
-                        <h3>University of Pennsylvania</h3>
-                        <p class="education-degree">Master of Computer and Information Technology</p>
-                        <span class="education-date">Aug 2025</span>
-                        <span class="education-location">Philadelphia, PA</span>
-                    </div>
-                    <div class="education-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="education-icon">🎓</div>
-                        <h3>University of Virginia</h3>
-                        <p class="education-degree">Master of Science in Statistics</p>
-                        <span class="education-date">Dec 2019</span>
-                        <span class="education-location">Charlottesville, VA</span>
-                    </div>
-                    <div class="education-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="education-icon">📚</div>
-                        <h3>Purdue University</h3>
-                        <p class="education-degree">Bachelor of Science in Economics</p>
-                        <span class="education-date">Aug 2017</span>
-                        <span class="education-location">West Lafayette, IN</span>
-                    </div>
                 </div>
             </div>
         </section>
@@ -335,24 +214,6 @@
                 <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
                     <div class="contact-info">
                         <p class="contact-text">I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and software engineering.</p>
-                        <div class="contact-methods">
-                            <a href="mailto:carlosxue68@gmail.com" class="contact-method">
-                                <span class="contact-icon">📧</span>
-                                <span>carlosxue68@gmail.com</span>
-                            </a>
-                            <a href="tel:+14344666224" class="contact-method">
-                                <span class="contact-icon">📱</span>
-                                <span>434-466-6224</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/jxue/" class="contact-method" target="_blank" rel="noopener noreferrer">
-                                <span class="contact-icon">💼</span>
-                                <span>linkedin.com/in/jxue</span>
-                            </a>
-                            <a href="https://github.com/johnnynaught" class="contact-method" target="_blank" rel="noopener noreferrer">
-                                <span class="contact-icon">💻</span>
-                                <span>github.com/johnnynaught</span>
-                            </a>
-                        </div>
                     </div>
                     <div class="contact-social">
                         <h3>Connect with me</h3>
@@ -373,7 +234,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">© 2026 Johnny Xue. Built with ❤️</p>
+            <p class="footer-text">&copy; 2026 Johnny Xue. Built with &#10084;&#65039;</p>
         </div>
     </footer>
 
@@ -385,117 +246,51 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 50
-        });
+        AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
 
-        // Navbar scroll effect
         const navbar = document.getElementById('navbar');
         const backToTop = document.getElementById('backToTop');
-
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-                backToTop.classList.add('visible');
-            } else {
-                navbar.classList.remove('scrolled');
-                backToTop.classList.remove('visible');
-            }
+            if (window.scrollY > 50) { navbar.classList.add('scrolled'); backToTop.classList.add('visible'); }
+            else { navbar.classList.remove('scrolled'); backToTop.classList.remove('visible'); }
         });
 
-        // Mobile nav toggle
         const navToggle = document.getElementById('navToggle');
         const navMenu = document.getElementById('navMenu');
-
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
-
-        // Close mobile menu on link click
+        navToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); navToggle.classList.toggle('active'); });
         document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                navToggle.classList.remove('active');
-            });
+            link.addEventListener('click', () => { navMenu.classList.remove('active'); navToggle.classList.remove('active'); });
         });
 
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
-        // Back to top
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+        backToTop.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-        // Dark mode toggle
         const themeToggle = document.getElementById('themeToggle');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const savedTheme = localStorage.getItem('theme');
-
-        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-            document.body.classList.add('dark-mode');
-        }
-
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) document.body.classList.add('dark-mode');
         themeToggle.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
             localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
         });
 
-        // Animate stat numbers
-        const statNumbers = document.querySelectorAll('.stat-number');
-        const statObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const target = parseInt(entry.target.dataset.count);
-                    let current = 0;
-                    const duration = 1500;
-                    const steps = 40;
-                    const increment = target / steps;
-                    const stepTime = duration / steps;
-                    const timer = setInterval(() => {
-                        current += increment;
-                        if (current >= target) {
-                            entry.target.textContent = target.toLocaleString();
-                            clearInterval(timer);
-                        } else {
-                            entry.target.textContent = Math.floor(current).toLocaleString();
-                        }
-                    }, stepTime);
-                    statObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        statNumbers.forEach(num => statObserver.observe(num));
-
-        // Active nav link on scroll
-        const sections = document.querySelectorAll('section[id]');
+        // Active nav link on scroll (includes header#about)
+        const allSections = document.querySelectorAll('[id]');
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY + 100;
-            sections.forEach(section => {
-                const top = section.offsetTop;
-                const height = section.offsetHeight;
-                const id = section.getAttribute('id');
-                const link = document.querySelector(`.nav-link[href="#${id}"]`);
-                if (link) {
-                    if (scrollY >= top && scrollY < top + height) {
-                        link.classList.add('active');
-                    } else {
-                        link.classList.remove('active');
-                    }
+            ['about', 'experience', 'projects', 'contact'].forEach(id => {
+                const el = document.getElementById(id);
+                const link = document.querySelector('.nav-link[href="#' + id + '"]');
+                if (el && link) {
+                    if (scrollY >= el.offsetTop && scrollY < el.offsetTop + el.offsetHeight) link.classList.add('active');
+                    else link.classList.remove('active');
                 }
             });
         });
