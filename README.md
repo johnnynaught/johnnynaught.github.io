@@ -1,6 +1,4 @@
-# Johnny Xue | Software Development Engineer Portfolio
-
-[**View Live Demo**](https://johnnyxue.github.io)
+# [Johnny Xue](https://johnnyxue.github.io)
 
 A modern, responsive personal portfolio website for a Software Development Engineer, built with vanilla HTML, CSS, and JavaScript. This project showcases professional experience, projects, and a clean, user-friendly design.
 
