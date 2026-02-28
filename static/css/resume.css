@@ -435,6 +435,27 @@ body.dark-mode .moon-icon { display: block; }
     flex-wrap: wrap;
 }
 
+/* Hero Tags */
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    justify-content: center;
+    margin-bottom: var(--space-xl);
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: var(--radius-sm);
+    backdrop-filter: blur(4px);
+}
+
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
@@ -483,6 +504,13 @@ body.dark-mode .moon-icon { display: block; }
 .stat-number {
     display: block;
     font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.stat-plus {
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-primary);
     line-height: 1;
@@ -697,6 +725,48 @@ body.dark-mode .moon-icon { display: block; }
 }
 
 /* ============================================
+   Skills Banner
+   ============================================ */
+.skills-banner {
+    text-align: center;
+}
+
+.skills-banner-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    justify-content: center;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-base);
+}
+
+.skill-tag:hover {
+    background: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+/* ============================================
    Experience / Timeline
    ============================================ */
 .timeline {
@@ -765,6 +835,14 @@ body.dark-mode .moon-icon { display: block; }
     font-weight: 500;
 }
 
+.timeline-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
 .timeline-date {
     display: inline-block;
     font-size: 0.8rem;
@@ -773,7 +851,11 @@ body.dark-mode .moon-icon { display: block; }
     background: var(--color-bg-alt);
     padding: 0.15rem 0.6rem;
     border-radius: var(--radius-sm);
-    margin-bottom: var(--space-md);
+}
+
+.timeline-location {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
 }
 
 .timeline-content p {
@@ -800,6 +882,63 @@ body.dark-mode .moon-icon { display: block; }
     left: 0;
     color: var(--color-accent);
     font-weight: bold;
+}
+
+/* ============================================
+   Education Section
+   ============================================ */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+}
+
+.education-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--color-shadow-hover);
+}
+
+.education-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+}
+
+.education-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.education-degree {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.education-date {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    color: var(--color-text-muted);
+    background: var(--color-bg-alt);
+    padding: 0.15rem 0.6rem;
+    border-radius: var(--radius-sm);
+    margin-right: var(--space-sm);
+}
+
+.education-location {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
 }
 
 /* ============================================
@@ -962,6 +1101,10 @@ body.dark-mode .moon-icon { display: block; }
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .education-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .contact-grid {
         grid-template-columns: 1fr;
         gap: var(--space-2xl);
@@ -1050,6 +1193,13 @@ body.dark-mode .moon-icon { display: block; }
     .projects-grid {
         grid-template-columns: 1fr;
         max-width: 500px;
+        margin: 0 auto;
+    }
+
+    /* Education */
+    .education-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
         margin: 0 auto;
     }
 
