@@ -32,11 +32,14 @@ A modern, responsive personal portfolio website built with vanilla HTML, CSS, an
     ├── css/
     │   └── resume.css      # All styles (design tokens, components, responsive)
     └── image/
-        ├── Group.png       # Hero background
-        ├── peason.png      # Profile photo
-        ├── LOGO1-5.png     # Project logos
-        ├── icon1-8.png     # Skill icons
-        └── *ICON.png       # Social media icons
+        ├── meili.jpg       # Hero background
+        ├── upenn_shield.png
+        ├── UVA-Symbol.png
+        ├── purdue-logo.png
+        ├── ArtiEcho_logo.png
+        ├── online_shopping.avif
+        ├── LI-In-Bug.png
+        └── GitHub_Invertocat_Black.png
 ```
 
 ## 🚀 Getting Started
