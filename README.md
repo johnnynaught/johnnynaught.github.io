@@ -1,4 +1,4 @@
-# [Johnny Xue](https://johnnynaught.github.io)
+# [johnnynaught.github.io](https://johnnynaught.github.io)
 
 A modern, responsive personal portfolio website for a Software Development Engineer, built with vanilla HTML, CSS, and JavaScript. This project showcases professional experience, projects, and a clean, user-friendly design.
 
